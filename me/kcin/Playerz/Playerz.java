@@ -71,7 +71,7 @@ extends JavaPlugin {
                 config.set("List.DisplaySuffix", (Object)true);
             }
             if (!config.contains("List.Prefix")) {
-                config.set("List.Prefix", (Object)"&6----------------------[&ePlayerz&6]-----------------------");
+                config.set("List.Prefix", (Object)"&6&m----------------------[&ePlayerz&6&m]-----------------------");
             }
             if (!config.contains("List.PlayerAmount")) {
                 config.set("List.PlayerAmount", (Object)"&3There are (&6%ONLINEPLAYERS%&3/&6%MAXPLAYERS%&3) players online.");
@@ -462,6 +462,12 @@ extends JavaPlugin {
         string = string.replaceAll("&d", (String)((Object)ChatColor.LIGHT_PURPLE));
         string = string.replaceAll("&e", (String)((Object)ChatColor.YELLOW));
         string = string.replaceAll("&f", (String)((Object)ChatColor.WHITE));
+        string = string.replaceAll("&l", (String)((Object)ChatColor.BOLD));
+        string = string.replaceAll("&n", (String)((Object)ChatColor.UNDERLINE));
+        string = string.replaceAll("&o", (String)((Object)ChatColor.ITALIC));
+        string = string.replaceAll("&m", (String)((Object)ChatColor.STRIKETHROUGH));
+        string = string.replaceAll("&k", (String)((Object)ChatColor.MAGIC));
+        string = string.replaceAll("&r", (String)((Object)ChatColor.RESET));
         return string;
     }
 
@@ -482,6 +488,12 @@ extends JavaPlugin {
         string = string.replaceAll("&d", "");
         string = string.replaceAll("&e", "");
         string = string.replaceAll("&f", "");
+        string = string.replaceAll("&l", "");
+        string = string.replaceAll("&n", "");
+        string = string.replaceAll("&o", "");
+        string = string.replaceAll("&m", "");
+        string = string.replaceAll("&k", "");
+        string = string.replaceAll("&r", "");
         return string;
     }
 
