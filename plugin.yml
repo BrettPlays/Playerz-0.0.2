@@ -1,3 +1,16 @@
-Coming soon.
-
-Getting it ASAP.
+name: Playerz
+author: K_Cin
+main: me.kcin.Playerz.Playerz
+version: 0.0.2
+description: >
+             Allows users to quickly see the amount of users and which users of each group are online.
+commands:
+  list:
+    description: Display player info
+  who:
+    description: Display player info
+  playerz:
+    description: Toggles automatic broadcasts
+permissions:
+    playerz.list:
+        description: Allows users to use the list commands.
